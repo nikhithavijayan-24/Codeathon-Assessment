@@ -279,7 +279,7 @@ Insights & Recommendations
 
 ---
 
-# 📁 Project Structure
+****📁 Project Structure****
 
 Nexa-Mart-Sales-Analysis/
 │
@@ -296,7 +296,8 @@ Nexa-Mart-Sales-Analysis/
 
 ---
 
-#📚 What I Learned
+
+****📚 What I Learned****
 
 Working on this project helped me understand the complete workflow of a Power BI project, from preparing raw data to presenting the final insights.
 
