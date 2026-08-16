@@ -281,7 +281,6 @@ Insights & Recommendations
 
 **📁 Project Structure**
 
-```text
 Nexa-Mart-Sales-Analysis/
 │
 ├── Dataset/
