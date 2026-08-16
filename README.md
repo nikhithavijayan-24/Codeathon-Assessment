@@ -279,8 +279,9 @@ Insights & Recommendations
 
 ---
 
-**📁 Project Structure**
+## 📁 Project Structure
 
+```text
 Nexa-Mart-Sales-Analysis/
 │
 ├── Dataset/
@@ -296,20 +297,23 @@ Nexa-Mart-Sales-Analysis/
 
 ---
 
+## 📚 What I Learned
 
-**📚 What I Learned**
+Working on this project helped me understand the complete workflow of building a Power BI dashboard, from preparing the raw dataset to presenting the final insights.
 
-Working on this project helped me understand the complete workflow of a Power BI project, from preparing raw data to presenting the final insights.
+Through this project, I gained practical experience in:
 
-Some of the main things I practised were:
+- Cleaning and preparing real-world style datasets
+- Handling missing values and duplicate records
+- Using Power Query for data transformation
+- Creating DAX measures, calculated columns, and calculated tables
+- Creating KPI cards and interactive dashboards
+- Selecting appropriate visualizations for different types of analysis
+- Using slicers to make reports interactive
+- Analysing sales, product, customer, and profitability data
+- Identifying meaningful patterns from visualizations
+- Converting analysis results into business insights
+- Creating recommendations based on data
+- Presenting an analytical project in a clear and professional way
 
-Working with messy datasets
-Handling missing and duplicate values
-Using Power Query for data preparation
-Creating and using DAX measures
-Creating calculated columns and calculated tables
-Designing KPI cards
-Choosing appropriate charts for different types of analysis
-Using slicers to make a dashboard interactive
-Converting analytical results into business insights
-Presenting findings in a clear and structured way
+---
