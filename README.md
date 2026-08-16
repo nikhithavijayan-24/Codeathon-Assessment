@@ -2,61 +2,64 @@
 
 ## 📌 About the Project
 
-This project is a Power BI sales analysis dashboard created as part of my Data Analytics learning journey.
+Nexa Mart Sales Analysis is a Power BI project I worked on as part of my Data Analytics learning journey.
 
-I worked with a retail sales dataset containing information about orders, customers, products, categories, regions, sales, profit, cost and quantity. The main objective was to clean and prepare the data, perform the required calculations, and turn the raw data into an interactive dashboard that can be used to understand business performance.
+The project started with a sales dataset containing information about orders, customers, products, categories, regions, sales, profit, cost and quantity. I worked through the dataset step by step — from cleaning and preparing the data to creating calculations, building visuals and finally presenting the findings through an interactive dashboard.
 
-While working on the project, I focused not only on creating visuals, but also on understanding what the data was actually showing and using those findings to create meaningful insights and recommendations.
+The main focus of this project was to understand the data from different business perspectives and turn the analysis into clear insights and recommendations.
 
 ---
 
 ## 🎯 Project Objectives
 
-The main objectives of this project were to:
+Through this project, I worked on:
 
-- Clean and prepare the given dataset
-- Handle missing values and duplicate records
-- Standardize and validate the data
-- Create DAX calculations required for the analysis
-- Build an interactive Power BI dashboard
-- Analyse sales, products, customers and profitability
-- Identify important business insights
-- Provide recommendations based on the analysis
+- Cleaning and preparing the sales dataset
+- Handling missing and duplicate values
+- Creating the required DAX calculations
+- Building KPI cards and interactive visuals
+- Analysing sales performance across regions and categories
+- Understanding product and customer performance
+- Analysing profit, cost and profit margin
+- Creating insights from the dashboard
+- Providing recommendations based on the findings
 
 ---
 
-# 🧹 Data Cleaning & Preparation
+## 🧹 Data Cleaning & Preparation
 
-I started the project by working with the dataset in **Power Query Editor**.
+I used **Power Query** to prepare the raw dataset before starting the analysis.
 
-The main data preparation activities included:
+The main preparation work included:
 
+- Checking the quality of the dataset
 - Identifying missing values
-- Handling missing categorical and numerical values
-- Removing duplicate records
+- Handling duplicate records
 - Correcting data types
-- Cleaning numerical fields
-- Standardizing the Order Date column
-- Checking the quality and validity of the cleaned data
+- Cleaning and standardising data where required
+- Preparing the date field for analysis
+- Validating the cleaned dataset before creating the dashboard
 
-After completing the cleaning process, the prepared dataset was loaded into Power BI for further analysis.
+This step helped me understand how important data preparation is before moving into visualisation and analysis.
 
 ---
 
-# 🧮 DAX Calculations
+## 🧮 DAX Calculations
 
-I created different measures, calculated columns and a calculated table to support the analysis.
+I created different DAX calculations to support the analysis and dashboard requirements.
 
 ### Measures Created
 
 - Total Sales
 - Total Profit
 - Total Orders
+- Total Products
 - Total Quantity Sold
 - Total Customers
+- Unique Customers
 - Total Cost
 - Profit Margin
-- Average Orders per Customer
+- YTD Sales
 
 ### Calculated Columns Created
 
@@ -69,64 +72,74 @@ I created different measures, calculated columns and a calculated table to suppo
 
 ### Calculated Table Created
 
-- EastRegionOrders
+- East Region Orders
 
-These calculations were used across the dashboard to create KPI cards, charts, filters and insights.
+These calculations were used to create the KPI cards, charts, slicers and analysis across the different report pages.
 
 ---
 
 # 📊 Dashboard
 
-I divided the dashboard into four pages so that each page focuses on a specific area of the business.
+I organised the report into four pages, with each page focusing on a different area of the business.
 
 ---
 
-## 01 | Sales Overview
+## 01. Sales Overview
 
-The **Sales Overview** page provides a quick view of the overall business performance.
+The Sales Overview page gives a high-level view of the overall sales performance.
 
-### KPIs
+### Key KPIs
 
-- Total Sales – **94.34M**
-- Total Orders – **1K**
-- Total Profit – **5.15M**
-- Profit Margin – **5.46%**
+| KPI | Value |
+|---|---:|
+| Total Sales | 94.34M |
+| Total Orders | 1K |
+| Total Profit | 5.15M |
+| Profit Margin | 5.46% |
 
-### Analysis
+### Main Analysis
 
-- Sales by Region
-- Sales by Category
-- Monthly Sales Trend
+- Total Sales by Region
+- Total Sales by Category
+- Total Sales by Month
+- Region, Year and Category slicers
 
 ### Key Findings
 
-- Total sales are approximately **94.34M**.
-- Total profit is approximately **5.15M**.
-- The overall profit margin is approximately **5.46%**.
-- East is one of the strongest-performing regions.
-- Furniture contributes the highest sales among the categories shown.
+- Total sales reached approximately **94.34M**.
+- Total profit was approximately **5.15M**.
+- The overall profit margin was **5.46%**.
+- East was the strongest-performing region among the identified regions.
+- Furniture generated the highest sales among the categories shown.
+
+### Recommendations
+
+- Continue strengthening sales performance in the East region.
+- Focus on the Furniture category and its high-performing products.
+- Monitor weaker-performing regions and identify opportunities for improvement.
+- Use monthly sales trends to plan promotions during lower-performing periods.
 
 ---
 
-## 02 | Product Analysis
+## 02. Product Analysis
 
-The **Product Analysis** page focuses on product demand, order volume and sales performance.
+The Product Analysis page focuses on product demand, order volume and sales performance.
 
-### KPIs
+### Key KPIs
 
-- Total Orders – **1K**
-- Total Products – **9**
-- Total Quantity Sold – **3K**
+| KPI | Value |
+|---|---:|
+| Total Orders | 1K |
+| Total Products | 9 |
+| Total Quantity Sold | 3K |
 
-### Analysis
+### Main Analysis
 
-- Order Distribution by Region
-- Top 5 Trending Products by Order Count
+- Total Orders by Region
 - Total Sales by Product
+- Top 5 Trending Products by Order Count
 
-### Key Findings
-
-The Top 5 products based on order count are:
+### Top 5 Products by Order Count
 
 | Product | Orders |
 |---|---:|
@@ -136,110 +149,134 @@ The Top 5 products based on order count are:
 | Cabinet | 125 |
 | Headphones | 122 |
 
-Monitor is the leading product by order count and also shows strong sales performance, with approximately **12.9M** in sales.
+### Key Findings
+
+- **Monitor** recorded the highest order count with **132 orders**.
+- Laptop followed closely with **131 orders**.
+- Monitor also generated approximately **12.9M** in sales.
+- The top-performing products account for a significant share of the overall product demand.
+
+### Recommendations
+
+- Maintain sufficient inventory for consistently high-demand products.
+- Give special attention to Monitor and Laptop due to their strong order performance.
+- Review lower-performing products and consider targeted promotions where appropriate.
 
 ---
 
-## 03 | Customer Analysis
+## 03. Customer Analysis
 
-The **Customer Analysis** page looks at customer contribution and purchasing behaviour.
+The Customer Analysis page focuses on customer contribution and purchasing behaviour.
 
-### KPIs
+### Key KPIs
 
-- Unique Customers – **101**
-- Total Orders – **1K**
-- Total Sales – **94.34M**
-- Total Profit – **5.15M**
+| KPI | Value |
+|---|---:|
+| Unique Customers | 101 |
+| Total Sales | 94.34M |
+| Total Profit | 5.15M |
 
-### Analysis
+### Main Analysis
 
 - Top 10 Customers by Sales
-- Customers by Order Count
-- Customer Sales Trend
+- Total Orders by Customer
+- Total Sales by Year
 
 ### Key Findings
 
 - The dataset contains **101 unique customers**.
-- Jordan Henderson is the highest identified customer by sales, with approximately **2.2M**.
-- Tracy House has the highest order count among identified customers, with **22 orders**.
-- Some records contain **Unknown** customer values, which were treated as missing customer information rather than actual customers.
+- **Jordan Henderson** was the highest identified customer by sales, contributing approximately **2.2M**.
+- **Tracy House** recorded the highest order count among the identified customers, with **22 orders**.
+- Some customer records were marked as **Unknown**, which indicates missing customer information in the dataset.
+
+### Recommendations
+
+- Focus on high-value customers through targeted offers and retention strategies.
+- Encourage repeat purchases from customers with higher order frequency.
+- Identify frequent customers and consider personalised promotions or loyalty incentives.
+- Improve the quality of missing customer information where possible.
 
 ---
 
-## 04 | Profitability
+## 04. Profitability
 
-The **Profitability** page focuses on profit performance and the relationship between sales, cost and profitability.
+The Profitability page focuses on profit, cost and overall profitability.
 
-### KPIs
+### Key KPIs
 
-- Total Profit – **5.15M**
-- Total Cost – **89.21M**
-- Profit Margin – **5.46%**
+| KPI | Value |
+|---|---:|
+| Total Profit | 5.15M |
+| Total Cost | 89.21M |
+| Profit Margin | 5.46% |
 
-### Analysis
+### Main Analysis
 
 - Profit Cost Difference by Category
-- Profit by Sales Category
-- Profit by Month
-- Profit by Product
+- Total Profit by Sales Category
+- Total Profit by Month
+- Total Profit by Product
 
 ### Key Findings
 
-- Total profit is approximately **5.15M**.
-- The overall profit margin is **5.46%**.
-- The High Sales Category contributes approximately **4.8M** in profit.
-- Laptop is the highest-profit product at approximately **0.71M**.
-- Bookshelf follows with approximately **0.69M**.
-- Monitor contributes approximately **0.65M**.
-- August records the highest monthly profit at approximately **0.49M**.
+- Total profit was approximately **5.15M**.
+- The overall profit margin was **5.46%**.
+- The High Sales Category contributed approximately **4.8M** in profit.
+- Laptop generated approximately **0.71M** in profit.
+- Bookshelf generated approximately **0.69M**.
+- Monitor generated approximately **0.65M**.
+- August recorded the highest monthly profit at approximately **0.49M**.
+
+### Recommendations
+
+- Focus on products that consistently contribute higher profit.
+- Maintain healthy inventory levels for high-profit products.
+- Review products and categories with lower profit contribution.
+- Monitor costs closely to improve the overall profit margin.
+- Use monthly profit trends to identify weaker periods and plan suitable strategies.
 
 ---
 
-# 💡 Business Insights
+# 💡 Overall Key Insights
 
-After analysing the different dashboard pages, a few patterns stood out:
+After working through the different areas of the dashboard, the main points I identified were:
 
-- Sales performance is strongly influenced by a few leading regions and categories.
-- Monitor is one of the strongest-performing products in terms of both orders and sales.
-- A relatively small number of customers contribute significantly to overall sales.
-- High-performing products also provide important opportunities for inventory and promotional planning.
-- Profitability varies across products, categories and months.
-- The overall profit margin of **5.46%** indicates that there is room for improving profitability through better cost management and product-level decisions.
+- Total sales reached approximately **94.34M**.
+- Total profit was approximately **5.15M**.
+- The overall profit margin was **5.46%**.
+- East was the strongest-performing region in the analysis.
+- Furniture was the leading category by sales.
+- Monitor was the top product by order count and also generated strong sales.
+- A relatively small group of customers contributed significantly to sales.
+- Profit performance varied across products and months.
+- Cost management is an important area for improving overall profitability.
 
 ---
 
 # 📌 Recommendations
 
-Based on the analysis, I would focus on the following areas:
+Based on the analysis, my main recommendations are:
 
-### Product Performance
-Prioritize high-demand products and maintain sufficient inventory for products with consistently strong order volumes.
-
-### Customer Retention
-Identify high-value and frequent customers and use targeted offers or loyalty strategies to encourage repeat purchases.
-
-### Regional Performance
-Continue strengthening high-performing regions while looking for ways to improve the performance of lower-performing regions.
-
-### Profitability
-Review costs and pricing for products and categories with lower profit contribution.
-
-### Monthly Performance
-Use monthly sales and profit trends to plan promotions and other strategies during weaker-performing periods.
+- Strengthen the performance of high-performing regions and categories.
+- Maintain inventory for products with consistently high demand.
+- Focus on high-value customers and encourage repeat purchases.
+- Review lower-performing products, regions and periods.
+- Monitor costs to improve profit margins.
+- Use sales and profit trends to plan targeted promotions and business strategies.
 
 ---
 
-# 🛠️ Tools Used
+## 🛠️ Tools Used
 
 - **Microsoft Power BI Desktop**
 - **Power Query**
 - **DAX**
-- **CSV / Excel Dataset**
+- **Microsoft Excel / CSV**
 - **GitHub**
 
 ---
 
-# 📈 Skills Applied
+## 📈 Skills Applied
 
 - Data Cleaning
 - Data Transformation
@@ -258,61 +295,12 @@ Use monthly sales and profit trends to plan promotions and other strategies duri
 
 ---
 
-# 🔄 Project Workflow
+## 📁 Project Structure
 
 ```text
-Raw Dataset
-     ↓
-Data Cleaning & Preparation
-     ↓
-Power Query Transformations
-     ↓
-Power BI Data Model
-     ↓
-3DAX Calculations
-     ↓
-KPI & Visual Creation
-     ↓
-Interactive Dashboard
-     ↓
-Insights & Recommendations
-
----
-
-**📁 Project Structure**
-
-Nexa-Mart-Sales-Analysis/
+Codeathon-Assessment/
 │
-├── Dataset/
-│   └── SalesData_1000Rows_WithIssues_copy.csv
-│
-├── PowerBI/
-│   └── Codeathon Answers.pbix
-│
-├── Documentation/
-│   └── Questions.docx
-│
+├── Codeathon Answers.pbix
+├── Questions.docx
+├── SalesData_1000Rows_WithIssues_copy.csv
 └── README.md
-
----
-
-**📚 What I Learned**
-
-Working on this project helped me understand the complete workflow of building a Power BI dashboard, from preparing the raw dataset to presenting the final insights.
-
-Through this project, I gained practical experience in:
-
-- Cleaning and preparing real-world style datasets
-- Handling missing values and duplicate records
-- Using Power Query for data transformation
-- Creating DAX measures, calculated columns, and calculated tables
-- Creating KPI cards and interactive dashboards
-- Selecting appropriate visualizations for different types of analysis
-- Using slicers to make reports interactive
-- Analysing sales, product, customer, and profitability data
-- Identifying meaningful patterns from visualizations
-- Converting analysis results into business insights
-- Creating recommendations based on data
-- Presenting an analytical project in a clear and professional way
-
----
