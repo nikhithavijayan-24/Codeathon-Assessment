@@ -1,188 +1,64 @@
-# Codeathon-Assessment
-Absolutely. For GitHub, I would make it **more portfolio-level and professional**, rather than making it look like an assignment submission.
+# 📊 Nexa Mart Sales Analysis | Power BI
 
-Copy-paste this directly into `README.md`:
+## 📌 About the Project
 
-````markdown
-# 📊 Nexa Mart Sales Analytics Dashboard
+This project is a Power BI sales analysis dashboard created as part of my Data Analytics learning journey.
 
-> An interactive Power BI dashboard designed to analyze sales performance, product trends, customer behavior, and profitability using a cleaned retail sales dataset.
+I worked with a retail sales dataset containing information about orders, customers, products, categories, regions, sales, profit, cost and quantity. The main objective was to clean and prepare the data, perform the required calculations, and turn the raw data into an interactive dashboard that can be used to understand business performance.
 
----
-
-## 📌 Project Overview
-
-**Nexa Mart Sales Analytics** is an end-to-end **Power BI Data Analytics project** developed as part of a Power BI Module End Evaluation.
-
-The project transforms a raw sales dataset into an interactive business intelligence dashboard through:
-
-- Data cleaning and transformation
-- Data quality handling
-- DAX calculations
-- KPI development
-- Interactive visualizations
-- Business performance analysis
-- Insight generation
-- Data-driven recommendations
-
-The final dashboard is organized into four analytical views:
-
-**Sales Overview · Product Analysis · Customer Analysis · Profitability**
+While working on the project, I focused not only on creating visuals, but also on understanding what the data was actually showing and using those findings to create meaningful insights and recommendations.
 
 ---
 
-## 🎯 Business Objective
+## 🎯 Project Objectives
 
-The primary objective of this project is to transform transactional sales data into meaningful business insights that can help answer questions such as:
+The main objectives of this project were to:
 
-- How are overall sales and profits performing?
-- Which regions and categories contribute the most to sales?
-- Which products generate the highest order volume and sales?
-- Which customers contribute the most to business performance?
-- How does profitability change over time?
-- Where are opportunities for improving sales and profitability?
-
----
-
-# 🗂️ Dashboard Structure
-
-## 01 · Sales Overview
-
-Provides a high-level summary of the company's overall sales performance.
-
-### Key Metrics
-
-- **Total Sales:** 94.34M
-- **Total Orders:** 1K
-- **Total Profit:** 5.15M
-- **Profit Margin:** 5.46%
-
-### Visual Analysis
-
-- Sales by Region
-- Sales by Category
-- Monthly Sales Trend
-
-### Interactive Filters
-
-- Region
-- Year
-- Category
-
-### Key Focus
-
-The page provides an executive-level overview of sales performance and highlights the strongest regions, categories, and sales periods.
+- Clean and prepare the given dataset
+- Handle missing values and duplicate records
+- Standardize and validate the data
+- Create DAX calculations required for the analysis
+- Build an interactive Power BI dashboard
+- Analyse sales, products, customers and profitability
+- Identify important business insights
+- Provide recommendations based on the analysis
 
 ---
 
-## 02 · Product Analysis
+# 🧹 Data Cleaning & Preparation
 
-Analyzes product-level performance and order activity.
+I started the project by working with the dataset in **Power Query Editor**.
 
-### Key Metrics
+The main data preparation activities included:
 
-- **Total Orders:** 1K
-- **Total Products:** 9
-- **Total Quantity Sold:** 3K
+- Identifying missing values
+- Handling missing categorical and numerical values
+- Removing duplicate records
+- Correcting data types
+- Cleaning numerical fields
+- Standardizing the Order Date column
+- Checking the quality and validity of the cleaned data
 
-### Visual Analysis
-
-- Order Distribution by Region
-- Total Sales by Product
-- Top 5 Trending Products by Order Count
-
-### Key Findings
-
-- **East** leads regional order volume with **263 orders (26.3%)**.
-- **South** follows with **255 orders (25.5%)**.
-- **Monitor** leads the Top 5 products by order count with **132 orders**.
-- Monitor also records approximately **12.9M** in sales.
-
-### Business Focus
-
-The analysis helps identify high-demand products and supports inventory planning, product prioritization, and promotional decisions.
+After completing the cleaning process, the prepared dataset was loaded into Power BI for further analysis.
 
 ---
 
-## 03 · Customer Analysis
+# 🧮 DAX Calculations
 
-Focuses on customer contribution and purchasing behavior.
+I created different measures, calculated columns and a calculated table to support the analysis.
 
-### Key Metrics
+### Measures Created
 
-- **Unique Customers:** 101
-- **Total Orders:** 1K
-- **Total Sales:** 94.34M
-- **Total Profit:** 5.15M
+- Total Sales
+- Total Profit
+- Total Orders
+- Total Quantity Sold
+- Total Customers
+- Total Cost
+- Profit Margin
+- Average Orders per Customer
 
-### Visual Analysis
-
-- Top 10 Customers by Sales
-- Top Customers by Order Count
-- Customer Sales Trend
-
-### Key Findings
-
-- The dataset contains **101 unique customers**.
-- **Jordan Henderson** is the highest identified customer by sales, contributing approximately **2.2M**.
-- **Tracy House** records the highest order count among identified customers with **22 orders**.
-
-### Business Focus
-
-Customer analysis helps identify high-value and frequent customers, supporting customer retention, targeted promotions, and relationship management.
-
----
-
-## 04 · Profitability
-
-Provides a detailed view of profit performance and cost impact.
-
-### Key Metrics
-
-- **Total Profit:** 5.15M
-- **Total Cost:** 89.21M
-- **Profit Margin:** 5.46%
-
-### Visual Analysis
-
-- Profit Cost Difference by Category
-- Profit by Sales Category
-- Monthly Profit Trend
-- Profit by Product
-
-### Key Findings
-
-- Overall profit is approximately **5.15M**.
-- Overall profit margin stands at **5.46%**.
-- The High Sales Category contributes approximately **4.8M** in profit.
-- **Laptop** is the highest-profit product at approximately **0.71M**.
-- **Bookshelf** follows with approximately **0.69M**.
-- **Monitor** contributes approximately **0.65M**.
-- August records the highest monthly profit at approximately **0.49M**.
-
-### Business Focus
-
-The page identifies profitable products and categories while highlighting opportunities for cost optimization and margin improvement.
-
----
-
-# 🧹 Data Preparation
-
-The raw dataset was prepared using **Power Query** before analysis.
-
-### Data Cleaning Activities
-
-- Identified and handled missing values
-- Removed duplicate records
-- Standardized date fields
-- Corrected data types
-- Cleaned numerical fields
-- Prepared categorical fields for analysis
-- Validated the cleaned dataset before loading it into the Power BI model
-
-### Data Transformation
-
-Additional analytical fields were created to support business analysis, including:
+### Calculated Columns Created
 
 - Sales Category
 - Profit Type
@@ -191,99 +67,194 @@ Additional analytical fields were created to support business analysis, includin
 - Profit Cost Difference
 - Order Year
 
----
+### Calculated Table Created
 
-# 🧮 DAX Analysis
+- EastRegionOrders
 
-The project includes calculated tables, calculated columns, and measures.
-
-## Calculated Table
-
-### East Region Orders
-
-Creates a separate table containing orders belonging to the East region.
+These calculations were used across the dashboard to create KPI cards, charts, filters and insights.
 
 ---
 
-## Calculated Column
+# 📊 Dashboard
 
-### Profit Cost Difference
-
-Used to analyze the difference between profit and cost across categories and other business dimensions.
+I divided the dashboard into four pages so that each page focuses on a specific area of the business.
 
 ---
 
-## Measure
+## 01 | Sales Overview
 
-### Total Profit
+The **Sales Overview** page provides a quick view of the overall business performance.
 
-Used throughout the dashboard for profit analysis and KPI reporting.
+### KPIs
+
+- Total Sales – **94.34M**
+- Total Orders – **1K**
+- Total Profit – **5.15M**
+- Profit Margin – **5.46%**
+
+### Analysis
+
+- Sales by Region
+- Sales by Category
+- Monthly Sales Trend
+
+### Key Findings
+
+- Total sales are approximately **94.34M**.
+- Total profit is approximately **5.15M**.
+- The overall profit margin is approximately **5.46%**.
+- East is one of the strongest-performing regions.
+- Furniture contributes the highest sales among the categories shown.
 
 ---
 
-## Profit Margin
+## 02 | Product Analysis
 
-The profitability analysis also uses a measure-based profit margin calculation:
+The **Product Analysis** page focuses on product demand, order volume and sales performance.
 
-The measure is formatted as a percentage in Power BI.
+### KPIs
+
+- Total Orders – **1K**
+- Total Products – **9**
+- Total Quantity Sold – **3K**
+
+### Analysis
+
+- Order Distribution by Region
+- Top 5 Trending Products by Order Count
+- Total Sales by Product
+
+### Key Findings
+
+The Top 5 products based on order count are:
+
+| Product | Orders |
+|---|---:|
+| Monitor | 132 |
+| Laptop | 131 |
+| Bookshelf | 129 |
+| Cabinet | 125 |
+| Headphones | 122 |
+
+Monitor is the leading product by order count and also shows strong sales performance, with approximately **12.9M** in sales.
 
 ---
 
-# 📊 Key Business Insights
+## 03 | Customer Analysis
 
-The completed dashboard highlights several important patterns:
+The **Customer Analysis** page looks at customer contribution and purchasing behaviour.
 
-### Sales Performance
+### KPIs
 
-* Total sales reached approximately **94.34M**.
-* Total profit reached approximately **5.15M**.
-* Overall profit margin stands at **5.46%**.
-* East is the leading region in order and sales contribution.
-* Furniture is the leading category by sales.
+- Unique Customers – **101**
+- Total Orders – **1K**
+- Total Sales – **94.34M**
+- Total Profit – **5.15M**
+
+### Analysis
+
+- Top 10 Customers by Sales
+- Customers by Order Count
+- Customer Sales Trend
+
+### Key Findings
+
+- The dataset contains **101 unique customers**.
+- Jordan Henderson is the highest identified customer by sales, with approximately **2.2M**.
+- Tracy House has the highest order count among identified customers, with **22 orders**.
+- Some records contain **Unknown** customer values, which were treated as missing customer information rather than actual customers.
+
+---
+
+## 04 | Profitability
+
+The **Profitability** page focuses on profit performance and the relationship between sales, cost and profitability.
+
+### KPIs
+
+- Total Profit – **5.15M**
+- Total Cost – **89.21M**
+- Profit Margin – **5.46%**
+
+### Analysis
+
+- Profit Cost Difference by Category
+- Profit by Sales Category
+- Profit by Month
+- Profit by Product
+
+### Key Findings
+
+- Total profit is approximately **5.15M**.
+- The overall profit margin is **5.46%**.
+- The High Sales Category contributes approximately **4.8M** in profit.
+- Laptop is the highest-profit product at approximately **0.71M**.
+- Bookshelf follows with approximately **0.69M**.
+- Monitor contributes approximately **0.65M**.
+- August records the highest monthly profit at approximately **0.49M**.
+
+---
+
+# 💡 Business Insights
+
+After analysing the different dashboard pages, a few patterns stood out:
+
+- Sales performance is strongly influenced by a few leading regions and categories.
+- Monitor is one of the strongest-performing products in terms of both orders and sales.
+- A relatively small number of customers contribute significantly to overall sales.
+- High-performing products also provide important opportunities for inventory and promotional planning.
+- Profitability varies across products, categories and months.
+- The overall profit margin of **5.46%** indicates that there is room for improving profitability through better cost management and product-level decisions.
+
+---
+
+# 📌 Recommendations
+
+Based on the analysis, I would focus on the following areas:
 
 ### Product Performance
+Prioritize high-demand products and maintain sufficient inventory for products with consistently strong order volumes.
 
-* Monitor is one of the strongest-performing products.
-* High-order products represent important opportunities for inventory planning.
-* Product-level sales analysis helps identify products requiring greater focus.
+### Customer Retention
+Identify high-value and frequent customers and use targeted offers or loyalty strategies to encourage repeat purchases.
 
-### Customer Performance
-
-* The dataset contains **101 unique customers**.
-* High-value customers make a significant contribution to overall sales.
-* Frequent customers provide opportunities for retention and loyalty strategies.
+### Regional Performance
+Continue strengthening high-performing regions while looking for ways to improve the performance of lower-performing regions.
 
 ### Profitability
+Review costs and pricing for products and categories with lower profit contribution.
 
-* High Sales Category contributes the majority of total profit.
-* Laptop, Bookshelf, and Monitor are among the strongest profit-generating products.
-* Monthly profitability varies across the year, creating opportunities for targeted planning.
+### Monthly Performance
+Use monthly sales and profit trends to plan promotions and other strategies during weaker-performing periods.
 
 ---
 
-# 💡 Business Recommendations
+# 🛠️ Tools Used
 
-Based on the analysis, the following actions are recommended:
+- **Microsoft Power BI Desktop**
+- **Power Query**
+- **DAX**
+- **CSV / Excel Dataset**
+- **GitHub**
 
-### 01 — Strengthen High-Performing Products
+---
 
-Maintain sufficient inventory and promotional support for products generating high sales and order volumes.
+# 📈 Skills Applied
 
-### 02 — Focus on High-Value Customers
-
-Develop targeted offers and retention strategies for customers contributing significant sales and order frequency.
-
-### 03 — Strengthen Regional Performance
-
-Continue supporting high-performing regions while developing targeted strategies for lower-performing regions.
-
-### 04 — Improve Profitability
-
-Review cost structures and pricing strategies for products and categories with weaker profitability.
-
-### 05 — Optimize Sales During Low-Performance Periods
-
-Use targeted campaigns and promotional strategies during weaker sales and profit periods.
+- Data Cleaning
+- Data Transformation
+- Power Query
+- DAX
+- Data Analysis
+- Data Visualization
+- KPI Creation
+- Dashboard Development
+- Calculated Columns
+- Calculated Tables
+- Measures
+- Interactive Slicers
+- Business Insights
+- Data Storytelling
 
 ---
 
@@ -291,76 +262,25 @@ Use targeted campaigns and promotional strategies during weaker sales and profit
 
 ```text
 Raw Dataset
-     │
-     ▼
-Power Query
-     │
-     ▼
-Data Cleaning & Transformation
-     │
-     ▼
-Data Validation
-     │
-     ▼
+     ↓
+Data Cleaning & Preparation
+     ↓
+Power Query Transformations
+     ↓
 Power BI Data Model
-     │
-     ▼
+     ↓
 DAX Calculations
-     │
-     ▼
-KPI Development
-     │
-     ▼
-Interactive Visualizations
-     │
-     ▼
-Dashboard Development
-     │
-     ▼
-Business Insights
-     │
-     ▼
-Recommendations
-```
+     ↓
+KPI & Visual Creation
+     ↓
+Interactive Dashboard
+     ↓
+Insights & Recommendations
 
----
 
-# 🛠️ Tools & Technologies
 
-| Technology                | Purpose                                            |
-| ------------------------- | -------------------------------------------------- |
-| **Microsoft Power BI**    | Dashboard development and visualization            |
-| **Power Query**           | Data cleaning and transformation                   |
-| **DAX**                   | Measures, calculated columns and calculated tables |
-| **Microsoft Excel / CSV** | Source data                                        |
-| **GitHub**                | Project documentation and version control          |
+**📁 Project Structure**
 
----
-
-# 📈 Skills Demonstrated
-
-* Data Cleaning
-* Data Transformation
-* Power Query
-* Data Modeling
-* DAX
-* Calculated Columns
-* Calculated Tables
-* Measures
-* KPI Development
-* Data Visualization
-* Dashboard Design
-* Interactive Slicers
-* Business Intelligence
-* Business Analysis
-* Insight Generation
-* Data Storytelling
-
----
-
-# 📁 Project Structure
-
-```text
 Nexa-Mart-Sales-Analysis/
 │
 ├── Dataset/
@@ -373,58 +293,20 @@ Nexa-Mart-Sales-Analysis/
 │   └── Questions.docx
 │
 └── README.md
-```
 
----
+📚 What I Learned
 
-# 🎓 Assessment Coverage
+Working on this project helped me understand the complete workflow of a Power BI project, from preparing raw data to presenting the final insights.
 
-This project addresses the core requirements of the Power BI assessment:
+Some of the main things I practised were:
 
-### Data Cleaning & Loading
-
-✔ Missing-value handling
-✔ Duplicate handling
-✔ Date standardization
-✔ Data preparation
-
-### Visualizations & Insights
-
-✔ Order distribution by region
-✔ Top 5 trending products by order count
-✔ Profit trend over time
-✔ Interactive dashboard analysis
-
-### DAX Calculations
-
-✔ East Region Orders calculated table
-✔ Profit Cost Difference calculated column
-✔ Total Profit measure
-✔ Additional analytical calculations
-
----
-
-# 🚀 Project Outcome
-
-The project demonstrates how raw transactional data can be transformed into an **interactive Business Intelligence solution**.
-
-The final dashboard enables users to move from:
-
-**Raw Data → Clean Data → Analysis → Visualization → Insights → Business Decisions**
-
-through a structured and interactive Power BI reporting experience.
-
----
-
-## 👩‍💻 Project
-
-### Nexa Mart Sales Analytics
-
-**Codeathon Assessment**
-
-*Data → Insights → Decisions*
-
-```
-
-This version is more suitable for a **professional GitHub portfolio** because it reads as a real analytics project rather than simply an assignment answer sheet.
-```
+Working with messy datasets
+Handling missing and duplicate values
+Using Power Query for data preparation
+Creating and using DAX measures
+Creating calculated columns and calculated tables
+Designing KPI cards
+Choosing appropriate charts for different types of analysis
+Using slicers to make a dashboard interactive
+Converting analytical results into business insights
+Presenting findings in a clear and structured way
