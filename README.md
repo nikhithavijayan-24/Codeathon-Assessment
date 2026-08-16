@@ -269,7 +269,7 @@ Power Query Transformations
      ↓
 Power BI Data Model
      ↓
-DAX Calculations
+3DAX Calculations
      ↓
 KPI & Visual Creation
      ↓
@@ -277,9 +277,9 @@ Interactive Dashboard
      ↓
 Insights & Recommendations
 
+---
 
-
-**📁 Project Structure**
+# 📁 Project Structure
 
 Nexa-Mart-Sales-Analysis/
 │
@@ -294,7 +294,9 @@ Nexa-Mart-Sales-Analysis/
 │
 └── README.md
 
-📚 What I Learned
+---
+
+#📚 What I Learned
 
 Working on this project helped me understand the complete workflow of a Power BI project, from preparing raw data to presenting the final insights.
 
